@@ -3,9 +3,12 @@ function getRandomHexColor() {
 }
 
 let buttonEl = document.querySelector('.change-color');
+let spanColorEl = document.querySelector('.color');
 let bodyEl = document.querySelector('body');
 buttonEl.addEventListener('click', onButtonClick);
 
 function onButtonClick() {
-  bodyEl.style.backgroundColor = getRandomHexColor();
+  const color = getRandomHexColor();
+  bodyEl.style.backgroundColor = color;
+  spanColorEl.textContent = color;
 }

@@ -3,7 +3,7 @@ inputEl.addEventListener('blur', onBlur);
 
 function onBlur(event) {
     let symbols = event.currentTarget.value;
-    let length = +inputEl.dataset.length;
+    let length = Number(inputEl.dataset.length);
     if (symbols.length === length) {
         inputEl.classList.remove("invalid");
         inputEl.classList.add("valid");

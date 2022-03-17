@@ -15,10 +15,7 @@ function onCreateButtonClick(){
 }
 
 function onDestroyButtonClick(){
-  let elements = Array.from(boxesEl.children);
-  elements.forEach(element => {
-    element.remove();
-  });
+  boxesEl.innerHTML = "";
 }
 
 function createBoxes(amount) {
